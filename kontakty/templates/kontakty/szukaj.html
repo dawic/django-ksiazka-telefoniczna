@@ -1,0 +1,62 @@
+{% extends 'kontakty/base.html' %}
+{% load static %}
+
+{%block search_content%}
+
+    <center>
+        <div>
+
+            <form action="/kontakty/szukaj.html">
+                {% csrf_token %}
+                <input id="search_box" type="text" name="search_box" placeholder="Znajdz..." maxlength="50">
+                <button id="search_submit" class="btn btn_border_white btn_rounded btn_md" type="submit"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </center>
+
+{%endblock%}
+
+{% block my_content %}
+
+{% if osoba %}
+
+    {% for nazwisko in osoba %}
+<div class="person_1">
+    <h3>
+        <span class="fa-stack fa-5x">
+            <i class="fa fa-circle-thin fa-stack-2x"></i>
+            <i class="fa fa-user fa-stack-1x"></i>
+        </span>
+        <h2>{{nazwisko.imie}} {{ nazwisko.nazwisko}}</h2>
+
+
+        {% if nazwisko.telefon_set.count != 0 %}
+            {% for e in nazwisko.telefon_set.all %}
+            <div>
+                Telefon: {{e}}
+            </div>
+            {%endfor%}
+        {% else %}
+            Telefon: brak <br>
+        {% endif %}
+
+        {% if nazwisko.email_set.count != 0 %}
+            {% for e in nazwisko.email_set.all %}
+            Email: {{e}}<br>
+            {%endfor%}
+        {% else %}
+            Email: brak
+        {% endif %}
+    </h3>
+    <br>
+    <br>
+</div>
+    {% endfor%}
+<br>
+<br>
+<br>
+{% else %}
+    <p>Brak osob w bazie.</p>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'kontakty/base.html' %}
+{% load static %}
+{% block my_content %}
+
+
+
+
+
+
+        <main id="main_container">
+            <div class="documentation">
+                <br>
+                <br>
+                <center><h1>{{osoba.imie}} {{ osoba.nazwisko }}</h1></center>
+
+
+                <form method="POST">
+                    {% csrf_token %}
+                    
+                    <label for="id_imie">Imie:</label> <input type="text" name="imie" maxlength="50" required id="id_imie" value={{osoba.imie}}>
+                    <br>
+                    <br>
+                    <label for="id_nazwisko">Nazwisko:</label> <input type="text" name="nazwisko" maxlength="50" required id="id_nazwisko" value={{osoba.nazwisko}}>
+                    <br>
+                    <br>
+                    {% for e in osoba.telefon_set.all %}
+                    <div>
+                        Telefon: <input input type="text" name="{{e.pk}}" value={{e}}><br><br>
+                        <input input type="hidden" name="{{e.pk}}1" value={{e}}>
+                    </div>
+                    {%endfor%}
+                    {% for e in osoba.email_set.all %}
+                    <div>
+                        Email: <input input type="text" name="{{e.pk}}" value={{e}}><br><br>
+                        <input input type="hidden" name="{{e.pk}}1" value={{e}}>
+                    </div>
+
+                    {%endfor%}
+
+                    <center><button type="submit" class="btn btn_border_white btn_rounded btn_md">Edytuj</button></center>
+                </form>
+
+            </div>
+        </main>
+
+{% endblock %}

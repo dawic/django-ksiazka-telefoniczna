@@ -1,0 +1,626 @@
+[
+  {
+    "model": "kontakty.osoba",
+    "pk": 1,
+    "fields": {
+      "imie": "Adam",
+      "nazwisko": "Adamski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 2,
+    "fields": {
+      "imie": "Pawe\u0142",
+      "nazwisko": "Kowalski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 3,
+    "fields": {
+      "imie": "Artur",
+      "nazwisko": "Nowak"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 4,
+    "fields": {
+      "imie": "Adam",
+      "nazwisko": "Jankowski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 5,
+    "fields": {
+      "imie": "Sebastian",
+      "nazwisko": "Sto\u0142owski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 6,
+    "fields": {
+      "imie": "Andrzej",
+      "nazwisko": "Nowak"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 7,
+    "fields": {
+      "imie": "Janusz",
+      "nazwisko": "Kowalski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 8,
+    "fields": {
+      "imie": "Przemys\u0142aw",
+      "nazwisko": "K\u0105t"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 9,
+    "fields": {
+      "imie": "Micha\u0142",
+      "nazwisko": "Micha\u0142owski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 10,
+    "fields": {
+      "imie": "Wojciech",
+      "nazwisko": "Martewicz"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 11,
+    "fields": {
+      "imie": "Stanis\u0142aw",
+      "nazwisko": "Chojnacki"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 12,
+    "fields": {
+      "imie": "Miros\u0142aw",
+      "nazwisko": "Piecewski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 13,
+    "fields": {
+      "imie": "Jakub",
+      "nazwisko": "Lata"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 14,
+    "fields": {
+      "imie": "Dawid",
+      "nazwisko": "Dawidowski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 15,
+    "fields": {
+      "imie": "Artur",
+      "nazwisko": "Arturowski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 16,
+    "fields": {
+      "imie": "Mateusz",
+      "nazwisko": "Patena"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 17,
+    "fields": {
+      "imie": "Jedrzej",
+      "nazwisko": "Jedrzejewski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 18,
+    "fields": {
+      "imie": "Marcin",
+      "nazwisko": "Marcinkowski"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 19,
+    "fields": {
+      "imie": "Janina",
+      "nazwisko": "Nowak"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 20,
+    "fields": {
+      "imie": "Kunegunda",
+      "nazwisko": "Kowalska"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 21,
+    "fields": {
+      "imie": "Anastazja",
+      "nazwisko": "Sto\u0142owska"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 22,
+    "fields": {
+      "imie": "Julia",
+      "nazwisko": "Lewandowska"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 23,
+    "fields": {
+      "imie": "Aleksandra",
+      "nazwisko": "Chojnacka"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 24,
+    "fields": {
+      "imie": "Ma\u0142gorzata",
+      "nazwisko": "Andrzejewicz"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 25,
+    "fields": {
+      "imie": "Jan",
+      "nazwisko": "Nowak"
+    }
+  },
+  {
+    "model": "kontakty.osoba",
+    "pk": 28,
+    "fields": {
+      "imie": "Anna",
+      "nazwisko": "Adamska"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 1,
+    "fields": {
+      "osoba": 1,
+      "telefon": "669434432"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 2,
+    "fields": {
+      "osoba": 2,
+      "telefon": "324425553"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 3,
+    "fields": {
+      "osoba": 2,
+      "telefon": "324425555"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 4,
+    "fields": {
+      "osoba": 4,
+      "telefon": "321224432"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 50,
+    "fields": {
+      "osoba": 28,
+      "telefon": "3412312999"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 52,
+    "fields": {
+      "osoba": 28,
+      "telefon": "3111999"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 53,
+    "fields": {
+      "osoba": 28,
+      "telefon": "4222999"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 54,
+    "fields": {
+      "osoba": 28,
+      "telefon": "5333999"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 63,
+    "fields": {
+      "osoba": 24,
+      "telefon": "554433643"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 64,
+    "fields": {
+      "osoba": 15,
+      "telefon": "654654345"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 65,
+    "fields": {
+      "osoba": 11,
+      "telefon": "665544365"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 66,
+    "fields": {
+      "osoba": 14,
+      "telefon": "667775434"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 67,
+    "fields": {
+      "osoba": 8,
+      "telefon": "887667545"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 68,
+    "fields": {
+      "osoba": 17,
+      "telefon": "765763323"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 69,
+    "fields": {
+      "osoba": 20,
+      "telefon": "878954412"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 70,
+    "fields": {
+      "osoba": 7,
+      "telefon": "546623454"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 71,
+    "fields": {
+      "osoba": 13,
+      "telefon": "665554443"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 72,
+    "fields": {
+      "osoba": 18,
+      "telefon": "812345555"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 73,
+    "fields": {
+      "osoba": 22,
+      "telefon": "554463111"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 74,
+    "fields": {
+      "osoba": 10,
+      "telefon": "544333222"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 75,
+    "fields": {
+      "osoba": 3,
+      "telefon": "554887766"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 76,
+    "fields": {
+      "osoba": 19,
+      "telefon": "887234567"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 77,
+    "fields": {
+      "osoba": 16,
+      "telefon": "611622633"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 78,
+    "fields": {
+      "osoba": 21,
+      "telefon": "755744733"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 80,
+    "fields": {
+      "osoba": 5,
+      "telefon": "688577466"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 81,
+    "fields": {
+      "osoba": 12,
+      "telefon": "664553442"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 82,
+    "fields": {
+      "osoba": 25,
+      "telefon": "559448337"
+    }
+  },
+  {
+    "model": "kontakty.telefon",
+    "pk": 83,
+    "fields": {
+      "osoba": 9,
+      "telefon": "774338119"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 1,
+    "fields": {
+      "osoba": 1,
+      "email": "adamski@wp.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 2,
+    "fields": {
+      "osoba": 2,
+      "email": "kowalski@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 3,
+    "fields": {
+      "osoba": 2,
+      "email": "kowalski123@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 4,
+    "fields": {
+      "osoba": 4,
+      "email": "jankowski@wp.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 26,
+    "fields": {
+      "osoba": 2,
+      "email": "kowal@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 28,
+    "fields": {
+      "osoba": 28,
+      "email": "adamska@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 29,
+    "fields": {
+      "osoba": 24,
+      "email": "gosia@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 30,
+    "fields": {
+      "osoba": 15,
+      "email": "artur@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 31,
+    "fields": {
+      "osoba": 11,
+      "email": "chojnacki@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 32,
+    "fields": {
+      "osoba": 23,
+      "email": "chojnacka@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 33,
+    "fields": {
+      "osoba": 14,
+      "email": "dawidowski@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 34,
+    "fields": {
+      "osoba": 8,
+      "email": "kat@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 35,
+    "fields": {
+      "osoba": 17,
+      "email": "jedrzej@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 36,
+    "fields": {
+      "osoba": 20,
+      "email": "kunegunda@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 37,
+    "fields": {
+      "osoba": 7,
+      "email": "kowalskij@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 38,
+    "fields": {
+      "osoba": 13,
+      "email": "lata@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 39,
+    "fields": {
+      "osoba": 19,
+      "email": "janina@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 40,
+    "fields": {
+      "osoba": 6,
+      "email": "nowaka@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 41,
+    "fields": {
+      "osoba": 21,
+      "email": "anastazja@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 42,
+    "fields": {
+      "osoba": 12,
+      "email": "piecewski@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 43,
+    "fields": {
+      "osoba": 10,
+      "email": "martewicz@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 44,
+    "fields": {
+      "osoba": 18,
+      "email": "marcinkowski@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 45,
+    "fields": {
+      "osoba": 1,
+      "email": "adam@abc.pl"
+    }
+  },
+  {
+    "model": "kontakty.email",
+    "pk": 46,
+    "fields": {
+      "osoba": 1,
+      "email": "a.adamski@abc.pl"
+    }
+  }
+]

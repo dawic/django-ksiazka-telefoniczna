@@ -1,0 +1,92 @@
+{% extends 'kontakty/base.html' %}
+{% load static %}
+
+{%block search_content%}
+<br>
+<br>
+<center>
+    <div>
+
+        <form action="/kontakty/szukaj.html">
+            {% csrf_token %}
+            <input id="search_box" type="text" name="search_box" placeholder="Znajdz..." maxlength="50">
+            <button id="search_submit" class="btn btn_border_white btn_rounded btn_md" type="submit"><i class="fa fa-search fa-2x" aria-hidden="true"></i></button>
+        </form>
+    </div>
+</center>
+<br>
+{%endblock%}
+{% block my_content %}
+
+
+
+
+
+{% if nazwiska %}
+
+    {% for nazwisko in nazwiska %}
+
+    <div class="person_1">
+
+
+        <h3>
+            <span class="fa-stack fa-5x">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-user fa-stack-1x"></i>
+            </span>
+            <h2>{{nazwisko.imie}} {{ nazwisko.nazwisko}}</h2>
+
+            {% if nazwisko.telefon_set.count != 0 %}
+                {% for e in nazwisko.telefon_set.all %}
+                <div>
+                    <label>Telefon: {{e}}</label><br>
+
+                </div>
+                {%endfor%}
+            {% else %}
+                Telefon: brak
+
+            {% endif %}
+            <form action="/kontakty/{{ nazwisko.id }}/dodajnumer/">
+                {% csrf_token %}
+                <button type="submit" class="btn btn_border_white btn_rounded btn_md">Dodaj Numer</button>
+            </form>
+
+            {% if nazwisko.email_set.count != 0 %}
+                {% for e in nazwisko.email_set.all %}
+                    Email: {{e}}<br>
+
+                {%endfor%}
+            {% else %}
+                Email: brak
+            {% endif %}
+            <form action="/kontakty/{{ nazwisko.id }}/dodajmail/">
+                {% csrf_token %}
+
+                <button type="submit" class="btn btn_border_white btn_rounded btn_md">Dodaj Email</button>
+            </form>
+
+
+            <form action="/kontakty/{{ nazwisko.id }}/edycja/">
+                {% csrf_token %}
+                <p><button type="submit" class="btn btn_border_white btn_rounded btn_md">Edytuj</button></p>
+            </form>
+
+            {% if nazwisko.email_set.count == 0 or nazwisko.telefon_set.count == 0%}
+            <form action="/kontakty/{{ nazwisko.id }}/usun/">
+                <button type="submit" class="btn btn_border_white btn_rounded btn_md">Usun</button>
+            </form>
+            {%endif%}
+
+        </h3>
+        <br><br>
+    </div>
+
+    {% endfor %}
+
+
+{% else %}
+    <p>Brak osob w bazie.</p>
+{% endif %}
+
+{% endblock %}

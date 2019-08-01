@@ -1,0 +1,17 @@
+{% extends 'kontakty/base.html' %}
+{% load static %}
+{% block my_content %}
+
+    <main id="main_container">
+        <br>
+        <br>
+        <center>
+            <form method="POST">
+                {% csrf_token %}
+                <h1>{{osoba.imie}} {{ osoba.nazwisko }}</></h1>
+                {{ form.as_p }}
+                <button type="submit" class="btn btn_border_white btn_rounded btn_md">Dodaj</button>
+            </form>
+        </center>
+    </main>
+    {% endblock %}
